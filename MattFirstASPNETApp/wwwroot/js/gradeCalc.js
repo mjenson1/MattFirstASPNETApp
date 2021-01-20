@@ -1,7 +1,7 @@
 ﻿var submit = document.getElementById("submitButton")
 
 submit.addEventListener("click", function () {
-    var assignmentpct = 0.5
+    var assignmentpct = 0.5  //Percent of total grade
     var groupProjectpct = 0.1
     var quizzespct = 0.1
     var examspct = 0.2
@@ -13,6 +13,7 @@ submit.addEventListener("click", function () {
     var exams = document.getElementById("exams").value
     var intex = document.getElementById("intex").value
 
+    //calculate total points
     var points = (assignmentpct * assignments) + (groupProjectpct * groupProjects) + (quizzes * quizzespct) + (examspct * exams) + (intexpct * intex)
 
     if (points >= 94) {
