@@ -4,12 +4,17 @@
 }
 
 label {
-    font-size: 20px;
-    color: darkslateblue;
-    width: 100px;
+    font-size: 16px;
+    color: darkolivegreen;
+    width: 275px;
     display: inline-block;
 }
 
-ul.quiz-props li {
+ul.grade li {
     list-style-type: none;
+}
+
+.resize {
+    height: auto;
+    width: 200px;
 }

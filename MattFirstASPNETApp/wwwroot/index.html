@@ -3,37 +3,41 @@
 <html>
 <head>
     <link href="css/main.css" rel="stylesheet" />
-    <title>Prof. Ganderson Fan Site</title>
+    <title>Matt Jenson Info Site</title>
+    <link rel="icon" href="Img/snowbird.ico" />
+    <h1>Matt Jenson "THE" Site</h1>
 </head>
-<img src="Img/gandyaward.jpg" />
 <body>
-    <h1>Prof. Gansderson fan site</h1>
-    <p>Ganderson is the real homie.</p><br />
-    <p>Pop Quiz: We love him because...?</p>
-    <ul class="quiz-props">
-        <li>A: His hair</li>
-        <li>B: He can pound bacon</li>
-        <li>C: That smile</li>
-        <li>D: He genuinely cares</li>
-        <li>E: All of the above</li>
-    </ul>
+    <img src="Img/TigerKing.jpg" class="resize" />
+    <p>I really like smiling, smiling is my favorite</p><br />
+    <p><u>What do I hope to get out of this class?</u></p>
+    <p>I hope to gain a solid understanding of how to work with ASP .NET and c#. I'd like to be able to understand the code that we use at work my work that was written in c#.</p>
+    <p><u>Top 3 Jobs of Interest</u></p>
+    <ol>
+        <li>Data Scientist</li>
+        <li>CyberSecurity Consultant</li>
+        <li>Data Analyst</li>
+    </ol>
 
-    <h2>Fan Mail</h2>
+    <h2><u>Grade Calculator</u></h2>
     <form>
-        <label>From:</label>
-        <input id="from"/>
+        <label>What is your Assignments percentage?</label>
+        <input id="assignment" />
+        <br /><br />
+        <label>What is your Group Project percentage?</label>
+        <input id="groupProject" />
+        <br /><br />
+        <label>What is your Quizzes percentage?</label>
+        <input id="quizzes" />
+        <br /><br />
+        <label>What is your Exams percentage?</label>
+        <input id="exams" />
+        <br /><br />
+        <label>What is your INTEX percentage?</label>
+        <input id="intex" />
         <br />
-        <label>Email:</label>
-        <input id="email"/>
         <br />
-        <label>Subject:</label>
-        <input id="subject"/>
-        <br />
-        <label>Message:</label>
-        <textarea rows="5" id="message"></textarea>
-        <br />
-        <br />
-        <input type="submit" value="Send Message" id="submitButton"/>
+        <input type="submit" value="Submit Percentages" id="submitButton" />
     </form>
 
     <script src="js/FanMail.js"></script>
