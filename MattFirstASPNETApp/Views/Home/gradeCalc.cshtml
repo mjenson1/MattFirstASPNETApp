@@ -11,20 +11,24 @@
     <h2><u>Grade Calculator</u></h2>
     <form method="post"> <!--changed the method to post-->
         <label>What is your Assignments percentage?</label>
-        <input id="assignment" asp-for="assignment"/>
-        <br /><br />
-        <label>What is your Group Project percentage?</label>
-        <input id="groupProject" asp-for="groupProject" />
-        <br /><br />
-        <label>What is your Quizzes percentage?</label>
-        <input id="quizzes" asp-for="quizzes"/>
-        <br /><br />
-        <label>What is your Exams percentage?</label>
-        <input id="exams" asp-for="exams"/>
-        <br /><br />
-        <label>What is your INTEX percentage?</label>
-        <input id="intex" asp-for="intex"/>
+        <input id="assignment" asp-for="assignment" type="number" placeholder="0-100"/>
         <br />
+        <span asp-validation-for="assignment" style="color:red"></span><br />
+        <label>What is your Group Project percentage?</label>
+        <input id="groupProject" asp-for="groupProject" type="number" placeholder="0-100"/>
+        <br />
+        <span asp-validation-for="assignment" style="color:red"></span><br />
+        <label>What is your Quizzes percentage?</label>
+        <input id="quizzes" asp-for="quizzes" type="number" placeholder="0-100"/>
+        <br />
+        <span asp-validation-for="assignment" style="color:red"></span><br />
+        <label>What is your Exams percentage?</label>
+        <input id="exams" asp-for="exams" type="number" placeholder="0-100"/>
+        <br />
+        <span asp-validation-for="assignment" style="color:red"></span><br />
+        <label>What is your INTEX percentage?</label>
+        <input id="intex" asp-for="intex" type="number" placeholder="0-100"/>
+        <br /><span asp-validation-for="assignment" style="color:red"></span>
         <br />
         <input type="submit" value="Submit Percentages" id="submitButton" name="submitButton"/> <!--submits the grade form-->
         <div asp-validation-summary="All"></div>
