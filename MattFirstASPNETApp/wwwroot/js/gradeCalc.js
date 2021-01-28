@@ -1,17 +1,40 @@
-﻿var submit = document.getElementById("submitButton")
+﻿$("#submitButton").click( function () {
 
-submit.addEventListener("click", function () {
+//var submit = document.getElementById("submitButton")
+
+//submit.addEventListener("click", function () {
     var assignmentpct = 0.5  //Percent of total grade
     var groupProjectpct = 0.1
     var quizzespct = 0.1
     var examspct = 0.2
     var intexpct = 0.1
 
-    var assignments = document.getElementById("assignment").value
-    var groupProjects = document.getElementById("groupProject").value
-    var quizzes = document.getElementById("quizzes").value
-    var exams = document.getElementById("exams").value
-    var intex = document.getElementById("intex").value
+    var assignments = $("#assignment").val();
+    var groupProjects = $("#groupProject").val();
+    var quizzes = $("#quizzes").val();
+    var exams = $("#exams").val();
+    var intex = $("#intex").val();
+
+    if (assignments < 0 || assignments > 100) {
+        alert("Enter a number between 0 and 100");
+        return; 
+    }
+    if (groupProjects < 0 || groupProjects > 100) {
+        alert("Enter a number between 0 and 100");
+        return;
+    }
+    if (quizzes < 0 || quizzes > 100) {
+        alert("Enter a number between 0 and 100");
+        return;
+    }
+    if (exams < 0 || exams > 100) {
+        alert("Enter a number between 0 and 100");
+        return;
+    }
+    if (intex < 0 || intex > 100) {
+        alert("Enter a number between 0 and 100");
+        return;
+    }
 
     //calculate total points
     var points = (assignmentpct * assignments) + (groupProjectpct * groupProjects) + (quizzes * quizzespct) + (examspct * exams) + (intexpct * intex)

@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Calculate Your Grade";
+}
+
+@model GradeCalcModel
+
+<body>
+    <h2><u>Grade Calculator</u></h2>
+    <form method="post"> <!--changed the method to post-->
+        <label>What is your Assignments percentage?</label>
+        <input id="assignment" asp-for="assignment"/>
+        <br /><br />
+        <label>What is your Group Project percentage?</label>
+        <input id="groupProject" asp-for="groupProject" />
+        <br /><br />
+        <label>What is your Quizzes percentage?</label>
+        <input id="quizzes" asp-for="quizzes"/>
+        <br /><br />
+        <label>What is your Exams percentage?</label>
+        <input id="exams" asp-for="exams"/>
+        <br /><br />
+        <label>What is your INTEX percentage?</label>
+        <input id="intex" asp-for="intex"/>
+        <br />
+        <br />
+        <input type="submit" value="Submit Percentages" id="submitButton" name="submitButton"/> <!--submits the grade form-->
+        <div asp-validation-summary="All"></div>
+    </form>
+</body>

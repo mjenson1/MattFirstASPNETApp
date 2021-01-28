@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="~/Img/snowbird.ico" /> <!--Adding an icon-->
+</head>
+<body>
+    <header>
+        <h1>@ViewBag.Title</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="gradeCalc">Grade Calc</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    @RenderBody()
+
+    <footer>Large Dog LLC</footer>
+    
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/gradeCalc.js"></script> <!--activates the grade calculator-->
+</body>
+</html>
